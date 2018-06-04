@@ -6,7 +6,8 @@ services:
     restart: unless-stopped
     ports:
      - "1025:1025"
-     - "1080:1080"
+    environment:
+     VIRTUAL_HOST: "mail.localhost"
 
 networks:
     default:
